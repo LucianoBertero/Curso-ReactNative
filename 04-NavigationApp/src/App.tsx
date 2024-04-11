@@ -5,30 +5,21 @@
  * @format
  */
 
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Text, useColorScheme, View} from 'react-native';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
-  return <SafeAreaView></SafeAreaView>;
+  return (
+    <NavigationContainer>
+      <View>
+        <Text>Hola</Text>
+      </View>
+    </NavigationContainer>
+  );
 }
 
 export default App;
