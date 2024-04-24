@@ -1,9 +1,10 @@
 import {Text, View} from 'react-native';
+import HambuerguerManu from '../../components/shared/HambuerguerManu';
 
 const Tabs3Screen = () => {
   return (
     <View>
-      <Text>tabs1 Screen</Text>
+      <HambuerguerManu></HambuerguerManu>
     </View>
   );
 };

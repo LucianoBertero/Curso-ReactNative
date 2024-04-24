@@ -12,13 +12,19 @@ import React from 'react';
 
 import {Text, useColorScheme, View} from 'react-native';
 import {StackNavigator} from './presentation/routes/StackNavigator';
+import {SideMenuNavigator} from './presentation/routes/SideMenuNavigator';
+import {BottomTabsNavigator} from './presentation/routes/BottomTabsNavigator';
 
 function App() {
   return (
     <NavigationContainer>
-      <StackNavigator></StackNavigator>
+      {/* <StackNavigator></StackNavigator> */}
+
+      <SideMenuNavigator></SideMenuNavigator>
+      {/* <BottomTabsNavigator></BottomTabsNavigator> */}
     </NavigationContainer>
   );
 }
 
 export default App;
+//
